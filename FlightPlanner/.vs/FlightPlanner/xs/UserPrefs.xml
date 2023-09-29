@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{71014221-CE24-4637-89A0-50574D725EA6}|http">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.FlightPlanner FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FlightPlanner/Program.cs">
+    <Files>
+      <File FileName="FlightPlanner/Controllers/CustomerAPIController.cs" Line="110" Column="10" />
+      <File FileName="FlightPlanner/Controllers/AdminAPIController.cs" Line="94" Column="1" />
+      <File FileName="FlightPlanner/Controllers/CleanupApiController.cs" Line="10" Column="6" />
+      <File FileName="FlightPlanner/DataDB/FlightPlannerDbContext.cs" Line="1" Column="1" />
+      <File FileName="FlightPlanner/Handlers/BasicAuthenticationHandler.cs" Line="71" Column="2" />
+      <File FileName="FlightPlanner/Models/Airport.cs" Line="1" Column="1" />
+      <File FileName="FlightPlanner/Models/Flight.cs" Line="1" Column="1" />
+      <File FileName="FlightPlanner/Models/PageResult.cs" Line="1" Column="1" />
+      <File FileName="FlightPlanner/Models/SearchFlightsRequest.cs" Line="1" Column="1" />
+      <File FileName="FlightPlanner/Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="FlightPlanner/Storage/FlightStorage.cs" Line="109" Column="10" />
+      <File FileName="FlightPlanner/appsettings.json" Line="11" Column="6" />
+      <File FileName="FlightPlanner/Program.cs" Line="25" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FlightPlanner" expanded="True">
+            <Node name="FlightPlanner" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="DataDB" expanded="True" />
+              <Node name="Handlers" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Storage" expanded="True" />
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+</Properties>
