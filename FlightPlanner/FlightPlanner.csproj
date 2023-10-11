@@ -27,11 +27,22 @@
     <None Remove="Storage\" />
     <None Remove="Models\" />
     <None Remove="Handlers\" />
-    <None Remove="DataDB\" />
+    <None Remove="Tables\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Storage\" />
     <Folder Include="Handlers\" />
-    <Folder Include="DataDB\" />
+    <Folder Include="Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FlightPLanner.Core\FlightPLanner.Core.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\FlightPlanner.Data\FlightPlanner.Data.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\FlightPlanner.Services\FlightPlanner.Services.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>

@@ -1,8 +1,8 @@
-﻿using FlightPlanner.Models;
+﻿using FlightPlanner.Core.Models;
+using FlightPlanner.Data;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using FlightPlanner.DataDB;
-using FlightPlanner.Storage;
+
 using Microsoft.EntityFrameworkCore;
 
 namespace FlightPlanner.Controllers
@@ -72,7 +72,8 @@ namespace FlightPlanner.Controllers
                                       .Where(f => f.From.AirportCode == request.From && f.To.AirportCode == request.To)
                                       .ToList();
 
-                return Ok(new { page = 0, totalItems = flights?.Count ?? 0, items = flights ?? new List<Flight>() });
+                //return Ok(new { page = 0, totalItems = flights?.Count ?? 0, items = flights ?? new List<Flight>() });
+                return Ok();
             }
             catch (Exception ex)
             {
@@ -101,7 +102,6 @@ namespace FlightPlanner.Controllers
         public IActionResult GetAllFlights()
         {
             var flights = _context.Flights.ToList();
-            Console.WriteLine($"Number of flights: {flights.Count}");
             if (flights == null || !flights.Any())
             {
                 return NotFound("No flights found");

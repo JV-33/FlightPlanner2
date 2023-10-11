@@ -7,11 +7,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a92bbd70-0031-40d2-8766-3ab8d4cfc601" name="Changes" comment="" />
+    <list default="true" id="a92bbd70-0031-40d2-8766-3ab8d4cfc601" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FlightPlanner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlightPlanner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner.sln" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/Controllers/AdminAPIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/Controllers/AdminAPIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/Controllers/CleanupApiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/Controllers/CleanupApiController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/Controllers/CustomerAPIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/Controllers/CustomerAPIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/DataDB/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/DataDB/FlightPlannerDbContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/FlightPlanner.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/FlightPlanner.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/Migrations/20230928184337_InitialCreate.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/Migrations/20230928184337_InitialCreate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/Migrations/FlightPlannerDbContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/Models/Airport.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/Models/Flight.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/Models/PageResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/Models/PageResult.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/Models/SearchFlightsRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/Models/SearchFlightsRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/Storage/FlightStorage.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/bin/Debug/net7.0/FlightPlanner.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/bin/Debug/net7.0/FlightPlanner.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/bin/Debug/net7.0/FlightPlanner.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/bin/Debug/net7.0/FlightPlanner.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/bin/Debug/net7.0/FlightPlanner.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/bin/Debug/net7.0/FlightPlanner.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/bin/Debug/net7.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/bin/Debug/net7.0/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/flight-planner.db" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/flight-planner.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/flight-planner.db-shm" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/flight-planner.db-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/flight-planner.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/flight-planner.db-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/obj/Debug/net7.0/FlightPlanner.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/obj/Debug/net7.0/FlightPlanner.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/obj/Debug/net7.0/FlightPlanner.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/obj/Debug/net7.0/FlightPlanner.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/obj/Debug/net7.0/FlightPlanner.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/obj/Debug/net7.0/FlightPlanner.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/obj/Debug/net7.0/FlightPlanner.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/obj/Debug/net7.0/FlightPlanner.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/obj/Debug/net7.0/FlightPlanner.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/obj/Debug/net7.0/FlightPlanner.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/obj/Debug/net7.0/FlightPlanner.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/obj/Debug/net7.0/FlightPlanner.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/obj/Debug/net7.0/ref/FlightPlanner.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/obj/Debug/net7.0/ref/FlightPlanner.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/obj/Debug/net7.0/refint/FlightPlanner.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/obj/Debug/net7.0/refint/FlightPlanner.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/obj/FlightPlanner.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/obj/FlightPlanner.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/obj/FlightPlanner.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/obj/FlightPlanner.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightPlanner/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/FlightPlanner/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -27,6 +70,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "FlightPlanner3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,6 +114,7 @@
       <workItem from="1695562341877" duration="26000" />
       <workItem from="1695563122119" duration="114000" />
       <workItem from="1695585197531" duration="3346000" />
+      <workItem from="1697027878272" duration="269000" />
     </task>
     <servers />
   </component>
@@ -78,5 +123,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/FlightPlanner/Controllers/AdminAPIController.cs</url>
+          <line>37</line>
+          <properties documentPath="$PROJECT_DIR$/FlightPlanner/Controllers/AdminAPIController.cs" initialLine="37" containingFunctionPresentation="Method 'PutFlight'">
+            <startOffsets>
+              <option value="1011" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1012" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

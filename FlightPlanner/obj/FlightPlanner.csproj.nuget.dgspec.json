@@ -4,6 +4,201 @@
     "/Users/JV/Desktop/FlightPlanner2/FlightPlanner/FlightPlanner.csproj": {}
   },
   "projects": {
+    "/Users/JV/Desktop/FlightPlanner2/FlightPLanner.Core/FlightPLanner.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/JV/Desktop/FlightPlanner2/FlightPLanner.Core/FlightPLanner.Core.csproj",
+        "projectName": "FlightPLanner.Core",
+        "projectPath": "/Users/JV/Desktop/FlightPlanner2/FlightPLanner.Core/FlightPLanner.Core.csproj",
+        "packagesPath": "/Users/JV/.nuget/packages/",
+        "outputPath": "/Users/JV/Desktop/FlightPlanner2/FlightPLanner.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/JV/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.308/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/JV/Desktop/FlightPlanner2/FlightPlanner.Data/FlightPlanner.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/JV/Desktop/FlightPlanner2/FlightPlanner.Data/FlightPlanner.Data.csproj",
+        "projectName": "FlightPlanner.Data",
+        "projectPath": "/Users/JV/Desktop/FlightPlanner2/FlightPlanner.Data/FlightPlanner.Data.csproj",
+        "packagesPath": "/Users/JV/.nuget/packages/",
+        "outputPath": "/Users/JV/Desktop/FlightPlanner2/FlightPlanner.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/JV/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/JV/Desktop/FlightPlanner2/FlightPLanner.Core/FlightPLanner.Core.csproj": {
+                "projectPath": "/Users/JV/Desktop/FlightPlanner2/FlightPLanner.Core/FlightPLanner.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.308/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/JV/Desktop/FlightPlanner2/FlightPlanner.Services/FlightPlanner.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/JV/Desktop/FlightPlanner2/FlightPlanner.Services/FlightPlanner.Services.csproj",
+        "projectName": "FlightPlanner.Services",
+        "projectPath": "/Users/JV/Desktop/FlightPlanner2/FlightPlanner.Services/FlightPlanner.Services.csproj",
+        "packagesPath": "/Users/JV/.nuget/packages/",
+        "outputPath": "/Users/JV/Desktop/FlightPlanner2/FlightPlanner.Services/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/JV/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/JV/Desktop/FlightPlanner2/FlightPLanner.Core/FlightPLanner.Core.csproj": {
+                "projectPath": "/Users/JV/Desktop/FlightPlanner2/FlightPLanner.Core/FlightPLanner.Core.csproj"
+              },
+              "/Users/JV/Desktop/FlightPlanner2/FlightPlanner.Data/FlightPlanner.Data.csproj": {
+                "projectPath": "/Users/JV/Desktop/FlightPlanner2/FlightPlanner.Data/FlightPlanner.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.308/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/JV/Desktop/FlightPlanner2/FlightPlanner/FlightPlanner.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +222,17 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/JV/Desktop/FlightPlanner2/FlightPLanner.Core/FlightPLanner.Core.csproj": {
+                "projectPath": "/Users/JV/Desktop/FlightPlanner2/FlightPLanner.Core/FlightPLanner.Core.csproj"
+              },
+              "/Users/JV/Desktop/FlightPlanner2/FlightPlanner.Data/FlightPlanner.Data.csproj": {
+                "projectPath": "/Users/JV/Desktop/FlightPlanner2/FlightPlanner.Data/FlightPlanner.Data.csproj"
+              },
+              "/Users/JV/Desktop/FlightPlanner2/FlightPlanner.Services/FlightPlanner.Services.csproj": {
+                "projectPath": "/Users/JV/Desktop/FlightPlanner2/FlightPlanner.Services/FlightPlanner.Services.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
