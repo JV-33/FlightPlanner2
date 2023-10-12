@@ -1,9 +1,10 @@
-﻿using FlightPlanner.Core.Models;
-using FlightPlanner.Data;
+﻿using AutoMapper;
+using FlightPlanner.Core.Models;
+using FlightPLanner.Core.Interfaces;
+using FlightPlanner.Core.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-
-using Microsoft.EntityFrameworkCore;
+using FlightPlanner.Models;
 
 namespace FlightPlanner.Controllers
 {
@@ -13,13 +14,18 @@ namespace FlightPlanner.Controllers
     public class CustomerAPIController : ControllerBase
     {
         private readonly ILogger<CustomerAPIController> _logger;
-        private readonly FlightPlannerDbContext _context;
+        private readonly IFlightService _flightService;
+        private readonly IMapper _mapper;
+        private readonly IEnumerable<IValidate> _validators;
 
-        public CustomerAPIController(FlightPlannerDbContext context, ILogger<CustomerAPIController> logger)
+        public CustomerAPIController(IFlightService flightService, IMapper mapper, IEnumerable<IValidate> validators, ILogger<CustomerAPIController> logger)
         {
+            _flightService = flightService;
+            _mapper = mapper;
+            _validators = validators;
             _logger = logger;
-            _context = context;
         }
+
 
         [Route("airports")]
         [HttpGet]
@@ -30,21 +36,35 @@ namespace FlightPlanner.Controllers
 
             var searchLower = search.Trim().ToLowerInvariant();
 
-            var fromAirports = _context.Flights
-                .Include(f => f.From)
-                .Where(f => EF.Functions.Like(f.From.AirportCode, $"%{searchLower}%") ||
-                            EF.Functions.Like(f.From.City, $"%{searchLower}%") ||
-                            EF.Functions.Like(f.From.Country, $"%{searchLower}%"))
+            var fromAirports = _flightService.GetAllFlightsWithAirports()
+                .Where(f => f.From != null && (f.From.AirportCode.ToLowerInvariant().Contains(searchLower) ||
+                                               f.From.City.ToLowerInvariant().Contains(searchLower) ||
+                                               f.From.Country.ToLowerInvariant().Contains(searchLower)))
                 .Select(f => f.From)
-                .Distinct();
+                .Distinct()
+                .Select(a => new
+                {
+                    airport = a.AirportCode,
+                    a.City,
+                    a.Country
+                });
 
-            var toAirports = _context.Flights
-                .Include(f => f.To)
-                .Where(f => EF.Functions.Like(f.To.AirportCode, $"%{searchLower}%") ||
-                            EF.Functions.Like(f.To.City, $"%{searchLower}%") ||
-                            EF.Functions.Like(f.To.Country, $"%{searchLower}%"))
+            _logger.LogInformation($"Found {fromAirports.Count()} from airports.");
+
+            var toAirports = _flightService.GetAllFlightsWithAirports()
+                .Where(f => f.To != null && (f.To.AirportCode.ToLowerInvariant().Contains(searchLower) ||
+                                             f.To.City.ToLowerInvariant().Contains(searchLower) ||
+                                             f.To.Country.ToLowerInvariant().Contains(searchLower)))
                 .Select(f => f.To)
-                .Distinct();
+                .Distinct()
+                .Select(a => new
+                {
+                    airport = a.AirportCode,
+                    a.City,
+                    a.Country
+                });
+
+            _logger.LogInformation($"Found {toAirports.Count()} to airports.");
 
             var uniqueAirports = fromAirports.Union(toAirports).ToList();
 
@@ -53,6 +73,7 @@ namespace FlightPlanner.Controllers
 
             return Ok(uniqueAirports);
         }
+
 
         [HttpPost]
         [Route("flights/search")]
@@ -66,42 +87,37 @@ namespace FlightPlanner.Controllers
                 return BadRequest(new { Error = "Invalid Request: Missing required fields." });
             }
 
-            try
-            {
-                var flights = _context.Flights
-                                      .Where(f => f.From.AirportCode == request.From && f.To.AirportCode == request.To)
+            var flights = _flightService.Get()
+                                      .Where(f => f.From != null && f.From.AirportCode == request.From &&
+                                                  f.To != null && f.To.AirportCode == request.To)
                                       .ToList();
 
-                //return Ok(new { page = 0, totalItems = flights?.Count ?? 0, items = flights ?? new List<Flight>() });
-                return Ok();
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "An error occurred while searching flights with From: {From} and To: {To}", request.From, request.To);
-                throw;
-            }
+            return Ok(new { page = 0, totalItems = flights?.Count ?? 0, items = flights ?? new List<Flight>() });
         }
 
         [Route("flights/{id}")]
         [HttpGet]
         public IActionResult FindFlightById(int id)
         {
-            var flight = _context.Flights
-                                 .Include(f => f.From)
-                                 .Include(f => f.To)
-                                 .FirstOrDefault(f => f.ID == id);
+            var flight = _flightService.GetFullFlightById(id);
 
             if (flight == null)
                 return NotFound();
 
-            return Ok(flight);
+            // Izmantojiet AutoMapper, lai konvertētu "flight" uz atbilstošo JSON modeli.
+            var result = _mapper.Map<FlightRequest>(flight);
+
+            return Ok(result);
         }
+
+
+
 
         [HttpGet]
         [Route("flights")]
         public IActionResult GetAllFlights()
         {
-            var flights = _context.Flights.ToList();
+            var flights = _flightService.Get().ToList();
             if (flights == null || !flights.Any())
             {
                 return NotFound("No flights found");

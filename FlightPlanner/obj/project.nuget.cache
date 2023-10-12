@@ -1,15 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "+MtRqpdkEaUSvPnNqVAma3k2G+XFed5oqqb6OncLrDHiPkYtnTe6qJajsj14qEHhc2ILGPpmJTlHq5c6iJ/UHA==",
+  "dgSpecHash": "CiwIbdxWGDJZxQ+gwG0zupjxYPak4EWWrl8AkaiBVQQdwp9aKmb2Fpd0rlxeQBUgm0th5/ehXquV6z5jDIpcLA==",
   "success": true,
   "projectFilePath": "/Users/JV/Desktop/FlightPlanner2/FlightPlanner/FlightPlanner.csproj",
   "expectedPackageFiles": [
+    "/Users/JV/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/JV/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/Users/JV/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",
     "/Users/JV/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/JV/.nuget/packages/microsoft.aspnetcore.openapi/7.0.10/microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",
     "/Users/JV/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "/Users/JV/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/Users/JV/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/JV/.nuget/packages/microsoft.data.sqlclient/5.1.1/microsoft.data.sqlclient.5.1.1.nupkg.sha512",
     "/Users/JV/.nuget/packages/microsoft.data.sqlclient.sni.runtime/5.1.0/microsoft.data.sqlclient.sni.runtime.5.1.0.nupkg.sha512",
     "/Users/JV/.nuget/packages/microsoft.data.sqlite.core/7.0.11/microsoft.data.sqlite.core.7.0.11.nupkg.sha512",

@@ -21,6 +21,7 @@
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.11" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="7.0.11" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,11 +29,13 @@
     <None Remove="Models\" />
     <None Remove="Handlers\" />
     <None Remove="Tables\" />
+    <None Remove="Validations\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Storage\" />
     <Folder Include="Handlers\" />
     <Folder Include="Tables\" />
+    <Folder Include="Validations\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FlightPLanner.Core\FlightPLanner.Core.csproj">

@@ -243,3 +243,4 @@
 /Users/JV/Desktop/FlightPlanner2/FlightPlanner/bin/Debug/net7.0/FlightPLanner.Core.pdb
 /Users/JV/Desktop/FlightPlanner2/FlightPlanner/bin/Debug/net7.0/FlightPlanner.Data.pdb
 /Users/JV/Desktop/FlightPlanner2/FlightPlanner/bin/Debug/net7.0/FlightPlanner.Services.pdb
+/Users/JV/Desktop/FlightPlanner2/FlightPlanner/bin/Debug/net7.0/AutoMapper.dll

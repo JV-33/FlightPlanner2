@@ -1,5 +1,4 @@
-﻿using System;
-using FlightPlanner.Core.Models;
+﻿using FlightPlanner.Core.Models;
 
 namespace FlightPlanner.Core.Services
 {
@@ -21,7 +20,5 @@ namespace FlightPlanner.Core.Services
         void Update<T>(T entity) where T : Entity;
 
         void DeleteRange<T>() where T : Entity;
-
     }
 }
-

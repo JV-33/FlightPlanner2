@@ -10,4 +10,10 @@
     <ProjectReference Include="..\FlightPLanner.Core\FlightPLanner.Core.csproj" />
     <ProjectReference Include="..\FlightPlanner.Data\FlightPlanner.Data.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="Exstensions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Exstensions\" />
+  </ItemGroup>
 </Project>
