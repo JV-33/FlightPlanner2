@@ -1,5 +1,4 @@
 ﻿using FlightPlanner.Core.Models;
-using FlightPlanner.Core.Services;
 
 namespace FlightPlanner.Core.Services
 {
@@ -9,6 +8,5 @@ namespace FlightPlanner.Core.Services
 
         bool Exists(Flight flight);
         IEnumerable<Flight> GetAllFlightsWithAirports();
-
     }
 }

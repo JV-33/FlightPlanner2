@@ -1,10 +1,5 @@
-﻿
-using FlightPlanner.Core.Models;
-using FlightPlanner.Core.Services;
-using FlightPlanner.Services;
-using FlightPLanner.Core.Services;
+﻿using FlightPLanner.Core.Services;
 using Microsoft.AspNetCore.Mvc;
-
 
 namespace FlightPlanner.Controllers
 {

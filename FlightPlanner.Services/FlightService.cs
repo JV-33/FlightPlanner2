@@ -38,7 +38,5 @@ namespace FlightPlanner.Services
                 .Include(f => f.From)
                 .ToList();
         }
-
-
     }
 }

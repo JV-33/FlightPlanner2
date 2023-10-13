@@ -1,5 +1,4 @@
-﻿using System;
-using FlightPlanner.Core.Models;
+﻿using FlightPlanner.Core.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
@@ -10,7 +9,6 @@ namespace FlightPlanner.Data
 
         public DbSet<Flight> Flights { get; set; }
         public DbSet<Airport> Airport { get; set; }
-
         int SaveChanges();
 
         DbSet<T> Set<T>() where T : class;
@@ -18,4 +16,3 @@ namespace FlightPlanner.Data
         EntityEntry<T> Entry<T>(T entity) where T : class;
     } 
 }
-

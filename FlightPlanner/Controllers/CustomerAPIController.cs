@@ -26,7 +26,6 @@ namespace FlightPlanner.Controllers
             _logger = logger;
         }
 
-
         [Route("airports")]
         [HttpGet]
         public IActionResult SearchAirports(string search)
@@ -74,7 +73,6 @@ namespace FlightPlanner.Controllers
             return Ok(uniqueAirports);
         }
 
-
         [HttpPost]
         [Route("flights/search")]
         public IActionResult SearchFlights(SearchFlightsRequest request)
@@ -87,9 +85,12 @@ namespace FlightPlanner.Controllers
                 return BadRequest(new { Error = "Invalid Request: Missing required fields." });
             }
 
-            var flights = _flightService.Get()
-                                      .Where(f => f.From != null && f.From.AirportCode == request.From &&
-                                                  f.To != null && f.To.AirportCode == request.To)
+            var flights = _flightService.GetAllFlightsWithAirports()
+                                      .Where(f => f.From != null &&
+                                                  f.From.AirportCode == request.From &&
+                                                  f.To != null &&
+                                                  f.To.AirportCode == request.To &&
+                                                  f.DepartureTime.Contains(request.DepartureDate))
                                       .ToList();
 
             return Ok(new { page = 0, totalItems = flights?.Count ?? 0, items = flights ?? new List<Flight>() });
@@ -109,9 +110,6 @@ namespace FlightPlanner.Controllers
 
             return Ok(result);
         }
-
-
-
 
         [HttpGet]
         [Route("flights")]

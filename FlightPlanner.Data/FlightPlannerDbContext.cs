@@ -1,8 +1,5 @@
-﻿
-using FlightPlanner.Core.Models;
+﻿using FlightPlanner.Core.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace FlightPlanner.Data;
 

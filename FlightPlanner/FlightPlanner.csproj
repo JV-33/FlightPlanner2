@@ -25,14 +25,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Storage\" />
     <None Remove="Models\" />
     <None Remove="Handlers\" />
     <None Remove="Tables\" />
     <None Remove="Validations\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Storage\" />
     <Folder Include="Handlers\" />
     <Folder Include="Tables\" />
     <Folder Include="Validations\" />

@@ -1,7 +1,6 @@
 ﻿using FlightPlanner.Core.Models;
 using FlightPlanner.Core.Services;
 using FlightPlanner.Data;
-using Microsoft.EntityFrameworkCore;
 
 namespace FlightPlanner.Services
 {
@@ -46,10 +45,5 @@ namespace FlightPlanner.Services
         {
             Update<T>(entity);
         }
-
-
     }
 }
-
-
-

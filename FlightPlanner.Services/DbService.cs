@@ -48,8 +48,14 @@ namespace FlightPlanner.Services
 
         public void Update<T>(T entity) where T : Entity
         {
-            _context.Entry(entity).State = EntityState.Modified;
-            _context.SaveChanges();
+            try
+            {
+                _context.Entry(entity).State = EntityState.Modified;
+                _context.SaveChanges();
+            }
+            catch (DbUpdateConcurrencyException ex)
+            {
+            }
         }
 
         public void DeleteRange<T>() where T : Entity

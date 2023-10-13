@@ -3,10 +3,8 @@ using FlightPlanner.Core.Models;
 using FlightPlanner.Core.Services;
 using FlightPlanner.Models;
 using FlightPLanner.Core.Interfaces;
-using FlightPLanner.Core.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-
 
 namespace FlightPlanner.Controllers
 {
@@ -17,6 +15,7 @@ namespace FlightPlanner.Controllers
     {
         private readonly IFlightService _flightService;
         private static readonly object _lockObj = new object();
+
         private readonly IMapper _mapper;
         private readonly IEnumerable<IValidate> _validators;
 
@@ -43,19 +42,24 @@ namespace FlightPlanner.Controllers
         [HttpPut]
         public IActionResult PutFlight(FlightRequest request)
         {
-            var flight = _mapper.Map<Flight>(request);
-            if(!_validators.All(v =>v.IsValid(flight)))
+            lock (_lockObj)
             {
-                return BadRequest();
-            }
+                var flight = _mapper.Map<Flight>(request);
 
-            if (_flightService.Exists(flight))
-            {
-                return Conflict();
-            }
+                if (!_validators.All(v => v.IsValid(flight)))
+                {
+                    return BadRequest();
+                }
+
+                if (_flightService.Exists(flight))
+                {
+                    return Conflict();
+                }
+
                 _flightService.Create(flight);
+                request = _mapper.Map<FlightRequest>(flight);
+            }
 
-            request = _mapper.Map<FlightRequest>(flight);
             return Created(" ", request);
         }
 
