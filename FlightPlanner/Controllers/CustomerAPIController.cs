@@ -105,7 +105,6 @@ namespace FlightPlanner.Controllers
             if (flight == null)
                 return NotFound();
 
-            // Izmantojiet AutoMapper, lai konvertētu "flight" uz atbilstošo JSON modeli.
             var result = _mapper.Map<FlightRequest>(flight);
 
             return Ok(result);
