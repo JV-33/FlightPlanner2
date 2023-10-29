@@ -1,0 +1,12 @@
+/Users/JV/Desktop/FlightPlanner2/FlightPLanner.Core/bin/Debug/net7.0/FlightPLanner.Core.deps.json
+/Users/JV/Desktop/FlightPlanner2/FlightPLanner.Core/bin/Debug/net7.0/FlightPLanner.Core.dll
+/Users/JV/Desktop/FlightPlanner2/FlightPLanner.Core/bin/Debug/net7.0/FlightPLanner.Core.pdb
+/Users/JV/Desktop/FlightPlanner2/FlightPLanner.Core/obj/Debug/net7.0/FlightPLanner.Core.csproj.AssemblyReference.cache
+/Users/JV/Desktop/FlightPlanner2/FlightPLanner.Core/obj/Debug/net7.0/FlightPLanner.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/JV/Desktop/FlightPlanner2/FlightPLanner.Core/obj/Debug/net7.0/FlightPLanner.Core.AssemblyInfoInputs.cache
+/Users/JV/Desktop/FlightPlanner2/FlightPLanner.Core/obj/Debug/net7.0/FlightPLanner.Core.AssemblyInfo.cs
+/Users/JV/Desktop/FlightPlanner2/FlightPLanner.Core/obj/Debug/net7.0/FlightPLanner.Core.csproj.CoreCompileInputs.cache
+/Users/JV/Desktop/FlightPlanner2/FlightPLanner.Core/obj/Debug/net7.0/FlightPLanner.Core.dll
+/Users/JV/Desktop/FlightPlanner2/FlightPLanner.Core/obj/Debug/net7.0/refint/FlightPLanner.Core.dll
+/Users/JV/Desktop/FlightPlanner2/FlightPLanner.Core/obj/Debug/net7.0/FlightPLanner.Core.pdb
+/Users/JV/Desktop/FlightPlanner2/FlightPLanner.Core/obj/Debug/net7.0/ref/FlightPLanner.Core.dll
